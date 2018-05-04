@@ -1,1 +1,52 @@
-你好
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>我的openlayers地图</title>
+  <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+  <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+  <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+	<style>
+		a.skiplink {
+			position: absolute;
+			clip: rect(1px, 1px, 1px, 1px);
+			padding: 0;
+			border: 0;
+			height: 1px;
+			width: 1px;
+			overflow: hidden;
+		}
+		a.skiplink:focus {
+			clip: auto;
+			height: auto;
+			width: auto;
+			background-color: #fff;
+			padding: 0.3em;
+		}
+		#map{
+			outline: #4A74A8 solid 0.15em;
+			width: 100%;
+			height: 600px;
+		}
+	</style>
+</head>
+
+<body>
+	<a class="skiplink" href="#map">Go to map</a>
+	<div id="map" class="map" tabindex="0"></div>
+	<button id='move-left'>左移</button>
+	<button id='move-right'>右移</button>
+	<button id='move-up'>上移</button>
+	<button id='move-down'>下移</button>
+	<button id="zoom-out">缩小</button>
+	<button id="zoom-in">放大</button>
+	<button id='move-to-WHU'>移到武大</button>
+	<button id='move-to-CHINA'>移到中国</button>
+	<button id='get-center'>获取中心</button>
+
+	<script src='mapControl.js' ></script>
+
+</body>
+
+</html>
