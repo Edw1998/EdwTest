@@ -86,7 +86,7 @@ var ZhangZhou = new ol.Feature({
 var dogeStyle = new ol.style.Style({
     image: new ol.style.Icon({
         crossOrigin: 'anonymous',
-        src: 'image/doge.png'
+        src: 'https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1525428138&di=1d30ae9f747121641e2c6b7c19230f3c&src=http://img5.duitang.com/uploads/item/201602/24/20160224133640_HRKj2.jpeg'
     })
 });
 GanZhou.setStyle(dogeStyle);
